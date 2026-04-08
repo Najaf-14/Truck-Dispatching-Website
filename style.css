@@ -89,6 +89,7 @@ h2 {
 
 /* Button */
 .parallax .btn {
+  display: inline-block;
   color: white;
   background-color: #ff7a00;
   border: 1px solid #ff7a00;
@@ -97,6 +98,7 @@ h2 {
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .parallax .btn:hover {
@@ -219,6 +221,7 @@ h2 {
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 8px;
+  text-decoration: none;
 }
 
 .about .btn:hover {
