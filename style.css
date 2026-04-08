@@ -1,240 +1,315 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 h2 {
-    color: #ff7a00;
-    padding-left: 8px;
+  color: #ff7a00;
+  padding-left: 8px;
 }
 
-/* Header */
+/* ! Header */
 .heading {
-    background-color: #0a1f44;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #0a1f44;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Navbar */
+/* ! Navbar */
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 8px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 8px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar a:hover {
-    background-color: #ff7a00;
-    padding: 10px;
-    border-radius: 6px;
-    transition: 0.3s ease;
+  background-color: #ff7a00;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s ease;
 }
 
-/* Parallax Section */
+/* ! Parallax Section */
 .parallax {
-    height: 100vh;
-    background-image: url('./assests/images/Truck1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  height: 100vh;
+  background-image: url("./assests/images/Truck1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .parallax::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 31, 58, 0.7);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 31, 58, 0.7);
+  z-index: 1;
 }
 
 /* Content */
 .parallax-content {
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 2;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .parallax-content h1 {
-    font-size: 48px;
-    margin: 0 auto 10px;
+  font-size: 48px;
+  margin: 0 auto 10px;
 }
 
 .parallax-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* Button */
 .parallax .btn {
-    color: white;
-    background-color: #ff7a00;
-    border: 1px solid #ff7a00;
-    padding: 15px 22px;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s ease;
+  color: white;
+  background-color: #ff7a00;
+  border: 1px solid #ff7a00;
+  padding: 15px 22px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .parallax .btn:hover {
-    background-color: #db6a00;
-    padding: 17px 24px;
+  background-color: #db6a00;
+  padding: 17px 24px;
 }
 
 /* ? ================= RESPONSIVE DESIGN ================= */
 /* Tablets */
 @media (max-width: 992px) {
-    .heading {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
 
-    .navbar ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-    .parallax-content h1 {
-        font-size: 36px;
-    }
+  .parallax-content h1 {
+    font-size: 36px;
+  }
 
-    .parallax-content p {
-        font-size: 16px;
-    }
+  .parallax-content p {
+    font-size: 16px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-    .heading {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    h2 {
-        padding-left: 0;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .navbar a {
-        display: block;
-        padding: 8px 12px;
-    }
-
-    .parallax {
-        background-attachment: scroll;
-        height: 70vh;
-    }
-
-    .parallax-content h1 {
-        font-size: 28px;
-    }
-
-    .parallax-content p {
-        font-size: 14px;
-    }
-
-    .parallax .btn {
-        padding: 12px 18px;
-        font-size: 16px;
-    }
-}
-
-/* About us */
-.about{
-    padding: 60px 20px;
-    background-color: #f5f5f5;
-}
-
-.about-container{
-    display: flex;
+  .heading {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1100px; 
-    margin: auto;
-}
+    text-align: center;
+  }
 
-/* About us Text */
-.about-text{
-    flex: 1;
-}
-.about-text p{
-    color: #333;
-    line-height: 1.5;
-    margin-bottom: 12px;
+  h2 {
+    padding-left: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 8px 12px;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+    height: 70vh;
+  }
+
+  .parallax-content h1 {
+    font-size: 28px;
+  }
+
+  .parallax-content p {
+    font-size: 14px;
+  }
+
+  .parallax .btn {
+    padding: 12px 18px;
     font-size: 16px;
+  }
 }
 
-/* About us Button */
-.about .btn{
-color: white;
-    background-color: #ff7a00;
-    border: 1px solid #ff7a00;
-    padding: 15px 22px;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s ease;
+/* ! About Us Section */
+.about {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.about-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 2.5rem;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #0a1f44;
+  font-size: 32px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.about-text p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.about .btn {
+  color: white;
+  background-color: #0a1f44;
+  border: 1px solid #0a1f44;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 8px;
 }
 
 .about .btn:hover {
-    background-color: #db6a00;
-    padding: 17px 24px;
+  background-color: #ff7a00;
+  border-color: #ff7a00;
 }
 
-/* About us image */
-.about-img{
+.about-img {
     flex: 1;
-    text-align: center;
+    /* zoom image not spill out if use it */
+    /* overflow: hidden;
+    border-radius: 12px; */
 }
 
-.about-img img{
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5);
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover{
+    transform: scale(1.03);
+}
+
+/* Stats Row */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  border-top: 2px solid #eeeeee;
+  padding-top: 2rem;
+}
+
+.stat-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff7a00;
+}
+
+.accent-bar {
+  width: 145px;
+  height: 3px;
+  background: #ff7a00;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
 }
 
 /* ? ================= RESPONSIVE DESIGN ================= */
+/* Responsive */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .about-top {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .about-img img {
-        max-width: 100%;
-    }
+  .accent-bar {
+    margin: 0 auto 16px;
+  }
 
-    .about-text {
-        text-align: center;
-    }
+  .about-img img {
+    height: 220px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
 }
