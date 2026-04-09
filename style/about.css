@@ -40,8 +40,20 @@
 
 /* Hidden text in about us*/
 .extra-text-about {
-  display: none;
-  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 
+    max-height 0.5s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.extra-text-about.show {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about .btn {
@@ -119,7 +131,7 @@
 }
 
 /* ? ================= RESPONSIVE DESIGN ================= */
-/* Responsive */
+/* Tablets */
 @media (max-width: 768px) {
   .about-top {
     flex-direction: column;
@@ -130,8 +142,21 @@
     margin: 0 auto 16px;
   }
 
+  .about-text h2 {
+    font-size: 26px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
   .about-img img {
     height: 220px;
+  }
+
+  /* Smooth animation adjustment */
+  .extra-text-about.show {
+    max-height: 800px; /* more space for wrapped text */
   }
 
   .about-stats {
@@ -140,12 +165,40 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   .about-card {
     padding: 1.5rem;
   }
 
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-img img {
+    height: 180px;
+  }
+
+  /* Important for animation on small screens */
+  .extra-text-about.show {
+    max-height: 1000px; /* prevent cutoff */
+  }
+
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-num {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 12px;
   }
 }
