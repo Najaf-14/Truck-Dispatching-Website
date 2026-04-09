@@ -1,0 +1,151 @@
+/* ! About Us Section */
+.about {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.about-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 2.5rem;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #0a1f44;
+  font-size: 32px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.about-text p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Hidden text in about us*/
+.extra-text-about {
+  display: none;
+  margin-top: 10px;
+}
+
+.about .btn {
+  color: white;
+  background-color: #0a1f44;
+  border: 1px solid #0a1f44;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.about .btn:hover {
+  background-color: #ff7a00;
+  border-color: #ff7a00;
+}
+
+.about-img {
+  flex: 1;
+  /* zoom image not spill out if use it */
+  /* overflow: hidden;
+    border-radius: 12px; */
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 280px;
+  box-shadow: 0 8px 20px rgba(255, 140, 91, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+}
+
+/* Stats Row */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  border-top: 2px solid #eeeeee;
+  padding-top: 2rem;
+}
+
+.stat-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.stat-num {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ff7a00;
+}
+
+.accent-bar {
+  width: 145px;
+  height: 3px;
+  background: #ff7a00;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ? ================= RESPONSIVE DESIGN ================= */
+/* Responsive */
+@media (max-width: 768px) {
+  .about-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .accent-bar {
+    margin: 0 auto 16px;
+  }
+
+  .about-img img {
+    height: 220px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+}
