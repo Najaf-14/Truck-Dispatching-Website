@@ -1,46 +1,109 @@
+/* ===== NAVIGATION STYLES - Shared across all pages ===== */
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1e2a47;
 }
 
-h2 {
-  color: #ff7a00;
-  padding-left: 8px;
-}
-
-/* ! Header */
+/* Header / Navbar Container */
 .heading {
   background-color: #0a1f44;
-  color: #ffffff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* ! Navbar */
+.heading h2 {
+  color: #ff7a00;
+  font-size: 1.8rem;
+  padding: 12px 0;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+/* Navigation Menu */
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 28px;
   margin: 0;
-  padding: 8px;
+  padding: 0;
+  align-items: center;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  padding: 8px 4px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.25s ease;
 }
 
 .navbar a:hover {
   background-color: #ff7a00;
-  padding: 10px;
-  border-radius: 6px;
-  transition: 0.3s ease;
+  padding: 8px 16px;
+}
+
+/* Active page indicator */
+.navbar a.active {
+  background-color: #ff7a00;
+  padding: 8px 16px;
+}
+
+/* Responsive Navigation */
+@media (max-width: 800px) {
+  .heading {
+    flex-direction: column;
+    padding: 12px 20px;
+  }
+  
+  .navbar ul {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  
+  .navbar a {
+    font-size: 0.9rem;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul {
+    gap: 12px;
+  }
+  
+  .navbar a {
+    font-size: 0.8rem;
+  }
 }
