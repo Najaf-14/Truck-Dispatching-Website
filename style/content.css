@@ -1,0 +1,139 @@
+/* ! Why Choose Us Section */
+.section-wrap {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.section-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 2.5rem;
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.why-accent-bar {
+  width: 245px;
+  height: 3px;
+  background: #ff7a00;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  color: #0a1f44;
+  font-size: 32px;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.why-card {
+  background: #f5f5f5;
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  transition: 0.3s ease;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: #ff7a00;
+  background: #ffffff;
+}
+
+.why-icon {
+  width: 44px;
+  height: 44px;
+  background: #0a1f44;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.why-body h3 {
+  color: #0a1f44;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.why-body p {
+  color: #666;
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ? ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header {
+    text-align: center;        /* center h2 and p to match the bar */
+  }
+
+  .section-header p {
+    max-width: 100%;           /* stop it being cut off */
+    margin: 0 auto;            /* center the paragraph block */
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .why-accent-bar {
+    width: 180px;
+    margin: 0 auto 16px;       /* center the bar */
+  }
+}
+
+@media (max-width: 480px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-card {
+    padding: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .why-accent-bar {
+    width: 130px;
+    margin: 0 auto 16px;
+  }
+}

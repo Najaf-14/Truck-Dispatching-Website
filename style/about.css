@@ -116,7 +116,7 @@
   color: #ff7a00;
 }
 
-.accent-bar {
+.about-accent-bar {
   width: 145px;
   height: 3px;
   background: #ff7a00;
@@ -138,7 +138,7 @@
     text-align: center;
   }
 
-  .accent-bar {
+  .about-accent-bar {
     margin: 0 auto 16px;
   }
 
