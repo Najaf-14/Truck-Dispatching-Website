@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-A modern, responsive truck dispatching website built to help owner-operators and trucking companies find profitable loads, streamline operations, and grow faster.
+A modern, responsive truck dispatching website built to help owner-operators and trucking companies find profitable loads, streamline operations and grow faster.
 </p>
 
 ---
@@ -224,7 +224,7 @@ You can deploy instantly on:
 
 ## 👨‍💻 Author
 
-Developed with passion for logistics, trucking, and modern web experiences.
+Developed with passion for logistics, trucking and modern web experiences.
 
 ---
 
