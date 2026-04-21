@@ -32,8 +32,8 @@ A modern, responsive truck dispatching website built to help owner-operators and
 ## 📸 Preview
 
 <p align="center">
-<img src="assests/images/Truck1.jpg" width="46%" />
-<img src="assests/images/Truck2.jpg" width="46%" />
+<img src="assets/images/Truck1.jpg" width="46%" />
+<img src="assets/images/Truck2.jpg" width="46%" />
 </p>
 
 ---
@@ -108,7 +108,7 @@ Fully optimized for:
 Truck Dispatching/
 ├─ .vscode/
 │  └─ settings.json
-├─ assests/
+├─ assets/
 │  ├─ icons/
 │  ├─ images/
 │  │  ├─ Truck1.jpg
@@ -204,7 +204,7 @@ You can deploy instantly on:
 
 ## 🔧 Recommended Improvements
 
-* Rename `assests` → `assets`
+* Rename `assets` → `assets`
 * Rename `testmonials.css` → `testimonials.css`
 * Add backend for contact form
 * Add animations using AOS / GSAP
