@@ -45,7 +45,6 @@
     gap: 8px;
 }
 
-/* Fixed checkmark — using before instead of first-letter */
 .getstarted-perks li::before {
     content: "✓";
     color: #ff7a00;

@@ -52,7 +52,6 @@
   max-width: 750px;
 }
 
-/* Grid — 2x2 */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -100,7 +99,6 @@
   margin: 0;
 }
 
-/* Footer */
 .services-preview-footer {
   text-align: left;
   border-top: 1px solid #eeeeee;
@@ -140,7 +138,7 @@
   }
 
   .services-preview-header {
-    text-align: center; /* ✅ center all header content */
+    text-align: center; 
   }
 
   .services-preview-header h2 {
@@ -149,7 +147,7 @@
 
   .services-accent-bar {
     width: 150px;
-    margin: 0 auto 16px; /* centers the bar */
+    margin: 0 auto 16px; 
   }
 }
 

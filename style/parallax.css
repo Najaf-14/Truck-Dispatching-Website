@@ -22,7 +22,7 @@
   z-index: 1;
 }
 
-/* Content */
+/* ! Content */
 .parallax-content {
   text-align: center;
   color: white;
@@ -40,7 +40,7 @@
   margin-bottom: 20px;
 }
 
-/* Button */
+/* ! Button */
 .parallax .btn {
   display: inline-block;
   color: white;

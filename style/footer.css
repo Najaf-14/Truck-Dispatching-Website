@@ -1,5 +1,3 @@
-/* ===== FOOTER STYLES - Shared across all pages ===== */
-
 footer {
   background-color: #0a1f44;
   color: #ffffff;
@@ -12,7 +10,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Footer Top Grid */
 .footer-top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
@@ -22,7 +19,6 @@ footer {
   margin-bottom: 28px;
 }
 
-/* Brand Section */
 .footer-brand h2 {
   font-size: 26px;
   color: #ff7a00;
@@ -37,7 +33,6 @@ footer {
   max-width: 280px;
 }
 
-/* Footer Columns */
 .footer-col h4 {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -67,7 +62,6 @@ footer {
   color: #ff7a00;
 }
 
-/* Social Icons */
 .social-row {
   display: flex;
   gap: 14px;
@@ -104,7 +98,6 @@ footer {
   fill: white;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -124,7 +117,7 @@ footer {
   font-weight: 500;
 }
 
-/* Responsive Footer */
+/* ? ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 900px) {
   .footer-top {
     grid-template-columns: 1fr 1fr;

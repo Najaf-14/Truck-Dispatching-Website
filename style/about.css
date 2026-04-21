@@ -38,7 +38,7 @@
   font-size: 16px;
 }
 
-/* Hidden text in about us*/
+/* ! Hidden text in about us*/
 .extra-text-about {
   max-height: 0;
   overflow: hidden;

@@ -256,7 +256,7 @@
     text-decoration: underline;
 }
 
-/* ! Responsive Design */
+/* ? ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 900px) {
     .contact-info {
         grid-template-columns: repeat(2, 1fr);

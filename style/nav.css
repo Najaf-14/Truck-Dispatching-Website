@@ -70,7 +70,7 @@ body {
   padding: 8px 16px;
 }
 
-/* Responsive Navigation */
+/* ? ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 800px) {
   .heading {
     flex-direction: column;
