@@ -202,17 +202,6 @@ You can deploy instantly on:
 
 ---
 
-## 🔧 Recommended Improvements
-
-* Rename `assets` → `assets`
-* Rename `testmonials.css` → `testimonials.css`
-* Add backend for contact form
-* Add animations using AOS / GSAP
-* Add SEO meta tags
-* Add real testimonials CMS
-
----
-
 ## 📬 Contact
 
 **Loadify Dispatching Services**
