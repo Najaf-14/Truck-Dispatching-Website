@@ -34,29 +34,31 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="contact-info">
-            <div class="info-card">
-                <div class="info-icon">📍</div>
-                <h3>Visit Us</h3>
-                <p>123 Main Street,<br>Kamra, Pakistan</p>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">📞</div>
-                <h3>Call Us</h3>
-                <p>+92 (123) 456-7890<br>+92 (123) 456-7891</p>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">✉️</div>
-                <h3>Email Us</h3>
-                <p>info@loadify.com<br>support@loadify.com</p>
-            </div>
-            <div class="info-card">
-                <div class="info-icon">🕐</div>
-                <h3>Working Hours</h3>
-                <p>Monday - Friday: 24/7<br>Saturday - Sunday: 24/7</p>
-            </div>
-        </div>
+<div class="contact-info">
+    <div class="info-card">
+        <div class="info-icon">&#128205;</div>
+        <h3>Visit Us</h3>
+        <p>123 Main Street,<br>Kamra, Pakistan</p>
+    </div>
+
+    <div class="info-card">
+        <div class="info-icon">&#128222;</div>
+        <h3>Call Us</h3>
+        <p>+92 (123) 456-7890<br>+92 (123) 456-7891</p>
+    </div>
+
+    <div class="info-card">
+        <div class="info-icon">&#9993;</div>
+        <h3>Email Us</h3>
+        <p>info@loadify.com<br>support@loadify.com</p>
+    </div>
+
+    <div class="info-card">
+        <div class="info-icon">&#128337;</div>  
+        <h3>Working Hours</h3>
+        <p>Monday - Friday: 24/7<br>Saturday - Sunday: 24/7</p>
+    </div>
+</div>
 
         <!-- Contact Form -->
         <div class="contact-form-container">
@@ -125,7 +127,7 @@
         <div class="faq-grid">
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
+                    <span>&#10067;</span>
                     <h4>How quickly do you respond to messages?</h4>
                 </div>
                 <div class="faq-answer">
@@ -135,7 +137,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
+                    <span>&#10067;</span>
                     <h4>Do you offer 24/7 support?</h4>
                 </div>
                 <div class="faq-answer">
@@ -145,7 +147,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
+                    <span>&#10067;</span>
                     <h4>Can I visit your office?</h4>
                 </div>
                 <div class="faq-answer">
@@ -155,7 +157,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>❓</span>
+                    <span>&#10067;</span>
                     <h4>How do I become a registered driver?</h4>
                 </div>
                 <div class="faq-answer">
@@ -171,7 +173,7 @@
             <div class="footer-top">
                 <div class="footer-brand">
                     <h2>Loadify</h2>
-                    <p>Reliable truck dispatching solutions that keep your trucks moving and your business growing —
+                    <p>Reliable truck dispatching solutions that keep your trucks moving and your business growing
                         24/7.</p>
                     <div class="social-row">
                         <a href="#" class="social-icon">
@@ -226,54 +228,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Simple form validation
-        const contactForm = document.getElementById('contactForm');
-
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get values
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value.trim();
-
-            // Validation
-            if (!name) {
-                alert('⚠️ Please enter your full name.');
-                return;
-            }
-
-            if (!email) {
-                alert('⚠️ Please enter your email address.');
-                return;
-            }
-
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('⚠️ Please enter a valid email address.');
-                return;
-            }
-
-            if (!subject) {
-                alert('⚠️ Please select a subject.');
-                return;
-            }
-
-            if (!message) {
-                alert('⚠️ Please enter your message.');
-                return;
-            }
-
-            // Success message
-            alert('✅ Message sent successfully!\n\nThank you for contacting Loadify. Our team will get back to you within 24 hours.');
-
-            // Reset form
-            contactForm.reset();
-        });
-    </script>
 </body>
 
 </html>
